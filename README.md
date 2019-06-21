@@ -34,4 +34,4 @@ Type: `string`
 
 Default: `build`
 
-The NPM script to run in all linked packages. If the script is defined in the linekd package, it will be invoked with `npm run-script`.
+The NPM script to run in all linked packages. If the script is defined in the linked package, it will be invoked with `npm run-script`.
