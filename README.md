@@ -1,5 +1,7 @@
 # Webpack Build Linked Packages
 
+[![npm](https://img.shields.io/npm/v/webpack-build-linked-packages.svg)](https://yarn.pm/webpack-build-linked-packages)
+
 A webpack plugin that runs a build script for any symlinked packages in node_modules (e.g. via `npm link` or `yarn link`).
 
 ## Installation
