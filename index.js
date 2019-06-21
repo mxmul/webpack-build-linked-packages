@@ -22,16 +22,14 @@ class WebpackBuildLinkedPackages {
           return;
         }
 
-        const linkedPackages = fs.readdirSync(nodeModules);
-        linkedPackages.forEach(relpath => {
+        const packages = fs.readdirSync(nodeModules);
+        packages.forEach(relpath => {
           const packagePath = path.resolve(nodeModules, relpath);
           const stats = fs.lstatSync(packagePath);
           if (stats.isSymbolicLink()) {
             const prevCwd = process.cwd();
             try {
               process.chdir(packagePath);
-              const packageJson = JSON.parse(fs.readFileSync('package.json'));
-              const scripts = packageJson.scripts || {};
               execSync(`npm run-script --if-present --silent ${this.options.scriptName}`);
             } finally {
               process.chdir(prevCwd);
