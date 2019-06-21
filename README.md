@@ -4,6 +4,8 @@
 
 A webpack plugin that runs a build script for any symlinked packages in node_modules (e.g. via `npm link` or `yarn link`).
 
+This can be handy when testing local changes to a package that has a build step (e.g. for stripping type annotations, or transpiling syntax with Babel). It can be easy to forget to rebuild the local package after each code change – instead you can install this plugin, and have the local package automatically rebuilt on each Webpack compile.
+
 ## Installation
 
 ```shell
