@@ -1,0 +1,33 @@
+{
+  "name": "webpack-build-linked-packages",
+  "version": "0.1.0",
+  "description": "A webpack plugin that runs a build script for any symlinked packages in node_modules (e.g. via `npm link` or `yarn link`).",
+  "main": "index.js",
+  "author": "Matt Mulder",
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "yarn",
+    "npm",
+    "link"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxmul/webpack-build-linked-packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mxmul/webpack-build-linked-packages/issues"
+  },
+  "homepage": "https://github.com/mxmul/webpack-build-linked-packages",
+  "files": [
+    "index.js",
+    "options-schema.json"
+  ],
+  "peerDependencies": {
+    "webpack": ">=4.0.0"
+  },
+  "dependencies": {
+    "schema-utils": "^1.0.0"
+  }
+}
