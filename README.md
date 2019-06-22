@@ -15,14 +15,14 @@ npm install webpack-build-linked-packages --save-dev
 In your webpack config, require the plugin then add an instance to the `plugins` array.
 
 ```js
-const WebpackBuildLinkedPackages = require('webpack-build-linked-packages');
+const WebpackBuildLinkedPackages = require("webpack-build-linked-packages");
 
 module.exports = {
   plugins: [
     new WebpackBuildLinkedPackages({
       // Options go here
-    }),
- ],
+    })
+  ]
 };
 ```
 
