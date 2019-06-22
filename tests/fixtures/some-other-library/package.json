@@ -1,0 +1,11 @@
+{
+  "name": "some-other-library",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "cp -r src lib"
+  }
+}
