@@ -29,5 +29,34 @@
   },
   "dependencies": {
     "schema-utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint **/*.js && prettier -c **/*.{js,json,md}",
+    "lint-fix": "eslint --fix **/*.js && prettier --write **/*.{js,json,md}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
