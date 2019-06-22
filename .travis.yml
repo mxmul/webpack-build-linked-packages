@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '12'
+  - '10'
+  - '8'
+deploy:
+  provider: npm
+  email: muldmatt@gmail.com
+  api_key:
+    secure: uoDdvhI3qVxLozXwORiXWek/uJoYUayc3UlyQVtP9Aqd5V6pb5iv2L/JJgIbsRQc73sbrnTkVzZ0gq+fFkOs0JkFnKfvaWokBB4XUe3W4Vptbii0SMXm3wQrKRB+P/qcphiT76MG947WcoPsifxa9kvIjSYFFCW/LFzQ1r99ojXtTblE/0mluvMhIU1SFNUGpwDxX4RXqIZoyb9eNRK7wLCNz297C3ayp0//lIgJCDLNNWNcLZci2hDPR0ZSCeugsNBz6TH2f0Tt7qyAVtdh8R2IpyBsW0qjs5PYIq/7tYBr8qh0AcTJMeQRVhu7bGYOdJwTbDiy2sksp+Hhjq2FrdLxgz3LsSgoMCM6w105ETx0uCtJZJxjMJrQc49UmMYKwjIKShW+DdKIekDmFmqKYZsqpDc42b1Zw2ko6MJ85yJ7JPDnmCg12g2VlIfKq1PMXVXbEh3d+zRrc4LpsSYdu1m19WlP/eveDkTPArV3HFNWxxvZ+spox3dPl9O3ynB4TT28rVIRE9d5s/aQ3WsMVy6GqOlZgHQPYiXoVUpSiDwDnotiRmQSWu2DMZJhEZKnOVlPAK/zhgUM5b9Bxx/88sxIkwVM77Atic4MnXd1i2bH6s3ojaLu/xDMqQDZfVp6bEAhqZOzBT8s1pkCiQoFMCDcMxW8XYVMn4ktG2XSwMM=
+  on:
+    tags: true
+    repo: mxmul/webpack-build-linked-packages
+    branch: travis
