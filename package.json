@@ -2,7 +2,7 @@
   "name": "webpack-build-linked-packages",
   "version": "0.1.0",
   "description": "A webpack plugin that runs a build script for any symlinked packages in node_modules (e.g. via `npm link` or `yarn link`).",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Matt Mulder",
   "license": "MIT",
   "keywords": [
@@ -21,8 +21,7 @@
   },
   "homepage": "https://github.com/mxmul/webpack-build-linked-packages",
   "files": [
-    "index.js",
-    "options-schema.json"
+    "lib"
   ],
   "peerDependencies": {
     "webpack": ">=4.0.0"
@@ -39,14 +38,20 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22.7.1",
     "husky": "^2.4.1",
+    "jest": "^24.8.0",
     "lint-staged": "^8.2.1",
-    "prettier": "^1.18.2"
+    "memory-fs": "^0.4.1",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.35.0"
   },
   "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint **/*.js && prettier -c **/*.{js,json,md}",
-    "lint-fix": "eslint --fix **/*.js && prettier --write **/*.{js,json,md}"
+    "test": "npm run lint && npm run test-only",
+    "test-only": "jest",
+    "lint": "eslint '**/*.js' && prettier -c '**/*.{js,json,md}'",
+    "lint-fix": "eslint --fix '**/*.js' && prettier --write '**/*.{js,json,md}'"
   },
   "husky": {
     "hooks": {
