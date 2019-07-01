@@ -1,6 +1,6 @@
 {
   "name": "webpack-build-linked-packages",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A webpack plugin that runs a build script for any symlinked packages in node_modules (e.g. via `npm link` or `yarn link`).",
   "main": "lib/index.js",
   "author": "Matt Mulder",
