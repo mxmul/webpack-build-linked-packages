@@ -28,7 +28,7 @@ module.exports = {
 };
 ```
 
-## Options ([read the schema](options-schema.json))
+## Options ([read the schema](https://github.com/mxmul/webpack-build-linked-packages/blob/master/lib/options-schema.json))
 
 ### `scriptName`
 
