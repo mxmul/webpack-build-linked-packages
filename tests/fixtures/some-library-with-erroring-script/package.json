@@ -1,0 +1,11 @@
+{
+  "name": "some-library-with-erroring-script",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "cp -r src lib && echo 'uh oh!' && exit 1234"
+  }
+}

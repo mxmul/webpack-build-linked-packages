@@ -1,0 +1,12 @@
+{
+  "name": "some-library-with-no-build-script",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "compile": "cp -r src lib",
+    "something-else": "echo hi"
+  }
+}
